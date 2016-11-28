@@ -38,7 +38,7 @@ namespace FrostPlay
             set
             {
                 volume = Math.Min(1.0f, Math.Max(value, 0f));
-                if (soundOut != null soundOut.WaveSource!=null)//need to check WaveSouce null or not
+                if (soundOut != null && soundOut.WaveSource!=null)//need to check WaveSouce null or not
                     soundOut.Volume = volume;
             }
         }
